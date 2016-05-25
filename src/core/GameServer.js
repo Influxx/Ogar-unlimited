@@ -1480,7 +1480,7 @@ onWVerify(client) {
 
     let newVirus = new Entity.Virus(this.world.getNextNodeId(), null, parentPos, this.config.virusStartMass);
     newVirus.setAngle(parent.getAngle());
-    newVirus.setMoveEngineData(200, 20);
+    newVirus.setMoveEngineData(this.config.virusShotSpeed, 20, 0.85);
 
     // Add to moving cells list
     this.addNode(newVirus, "moving");
