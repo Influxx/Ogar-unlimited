@@ -153,10 +153,6 @@ this.name = name;
       name: "none"
     };
 
-
-    this.banned = [];
-
-
     this.leaderboard = []; // leaderboard
     this.lb_packet = new ArrayBuffer(0); // Leaderboard packet
     this.largestClient = undefined;
